@@ -1,0 +1,50 @@
+#home {
+  height: 100vh;
+  align-items: left;
+  background-color: rgb(18, 30, 39);
+  color: rgb (255, 255, 255);
+}
+
+.links svg {
+  width: 50px;
+  margin-right: 50px;
+  fill: white;
+  cursor: pointer;
+  transition: fill 0.15s;
+}
+
+.links svg:hover {
+	fill: rgb(168, 208, 206);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links a {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  position: relative;
+}
+
+.links a .tooltip{
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border-radius: 2px;
+  font-size: 15px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.links a:hover .tooltip {
+  opacity: 1;
+}
+

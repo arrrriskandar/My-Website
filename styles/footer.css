@@ -1,0 +1,10 @@
+.footnote {
+  font-size: 10px;
+  height: 50px;
+  text-align: center;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 30, 39);
+  color: rgb(255, 255, 255);
+}
