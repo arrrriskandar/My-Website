@@ -1,8 +1,22 @@
 #home {
   height: 100vh;
-  align-items: left;
   background-color: rgb(18, 30, 39);
   color: rgb (255, 255, 255);
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.text {
+  align-items: left;
 }
 
 .links svg {

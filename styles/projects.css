@@ -1,3 +1,11 @@
 #projects {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
 	color: rgb(18, 30, 39);
+}
+
+.project {
+	padding: 20px;
+	border-radius: 5px;
 }

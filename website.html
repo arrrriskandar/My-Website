@@ -16,6 +16,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/7f70c90e4b.js" crossorigin="anonymous"></script>
 
+  <script>
+    function handleFormSubmit() {
+      alert("Form submitted successfully!");
+    }
+  </script>
 </head>
 
 <body>
@@ -27,61 +32,79 @@
     <a href="#contact">Contact</a>
   </header>
   <section id="home">
-    <h1 class="introduction">Hey, I'm Iskandar!</h1>
-    <div class="links">
-      <a href="#contact">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5l-8-5h16zm0 12H4V8l8 5l8-5v10z" />
-        </svg>
-        <div class="tooltip">Email me</div>
-      </a>
-      <a href="https://github.com/arrrriskandar" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
-        </svg>
-        <div class="tooltip">Check out my projects on Github</div>
-      </a>
-      <a href="https://docs.google.com/document/d/1FNRIwshNUEdwpcLJqhbKTqWcJ4JsVVAQtIJ8VP5w67Y/edit?usp=sharing" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <g>
-            <path d="M7.8 6.35c.56 0 1.01-.45 1.01-1.01S8.36 4.33 7.8 4.33s-1.01.45-1.01 1.01s.45 1.01 1.01 1.01Z" />
-            <path fill-rule="evenodd"
-              d="M9.83 8.55c0-1.08-.91-1.86-2.03-1.86c-1.12 0-2.03.78-2.03 1.86v.51c0 .09.04.18.1.24c.06.06.15.1.24.1h3.38c.09 0 .18-.04.24-.1c.06-.06.1-.15.1-.24v-.51ZM5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd" />
-            <path fill-rule="evenodd"
-              d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2v-15Zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001a.041.041 0 0 0-.012-.006Z"
-              clip-rule="evenodd" />
-            <path fill-rule="evenodd"
-              d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1Z"
-              clip-rule="evenodd" />
-          </g>
-        </svg>
-        <div class="tooltip">View my resume</div>
-      </a>
-      <a href="https://www.instagram.com/arrrriskandar/" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
-        </svg>
-        <div class="tooltip">Follow me on Instagram</div>
-      </a>
+    <div class="contents">
+      <div class="text">
+        <h1 class="introduction">Hey, I'm Iskandar!</h1>
+        <div class="links">
+          <a href="#contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5l-8-5h16zm0 12H4V8l8 5l8-5v10z" />
+            </svg>
+            <div class="tooltip">Email me</div>
+          </a>
+          <a href="https://github.com/arrrriskandar" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+            </svg>
+            <div class="tooltip">Check out my projects on Github</div>
+          </a>
+          <a href="https://docs.google.com/document/d/1FNRIwshNUEdwpcLJqhbKTqWcJ4JsVVAQtIJ8VP5w67Y/edit?usp=sharing"
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <g>
+                <path
+                  d="M7.8 6.35c.56 0 1.01-.45 1.01-1.01S8.36 4.33 7.8 4.33s-1.01.45-1.01 1.01s.45 1.01 1.01 1.01Z" />
+                <path fill-rule="evenodd"
+                  d="M9.83 8.55c0-1.08-.91-1.86-2.03-1.86c-1.12 0-2.03.78-2.03 1.86v.51c0 .09.04.18.1.24c.06.06.15.1.24.1h3.38c.09 0 .18-.04.24-.1c.06-.06.1-.15.1-.24v-.51ZM5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                  d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2v-15Zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001a.041.041 0 0 0-.012-.006Z"
+                  clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                  d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1Z"
+                  clip-rule="evenodd" />
+              </g>
+            </svg>
+            <div class="tooltip">View my resume</div>
+          </a>
+          <a href="https://www.instagram.com/arrrriskandar/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
+            </svg>
+            <div class="tooltip">Follow me on Instagram</div>
+          </a>
+        </div>
+        <p class="summary">Motivated and organised Bioengineering graduate with experience in mobile development.
+          Proficient
+          in Java with knowledge in web development and database management. A quick-learner great at working
+          independently
+          or in a team.</p>
+      </div>
+      <div class="emoji">
+        <img src="pictures/Memoji.png" alt="Profile Picture">
+      </div>
     </div>
-    <p class="summary">Motivated and organised Bioengineering graduate with experience in mobile development. Proficient
-      in Java with knowledge in web development and database management. A quick-learner great at working independently
-      or in a team.</p>
   </section>
   <section id="about">
     <h1>About Me</h1>
-    <p>As a graduate in Bioengineering, I have developed a
-      passion for software engineering and I am eager to pursue a career in this field.
-      Although I do not have a formal education in Computer Science, I have gained
-      knowledge in programming languages such as Python and C++ during my studies.
-      Furthermore, I have developed a deep understanding of the Java programming
-      language and proficiency in HTML5 through online tutorials and self guided practices
-      upon graduation. On top of my technical skills, I am a quick learner and a team player.I thrive in
-      fast-paced environments and am always eager to take on new challenges.</p>
+    <div class="contents">
+      <div class="picture">
+        <img src="pictures/Photo.jpg" alt="Profile Picture">
+      </div>
+      <div class="text">
+        <p>As a graduate in Bioengineering, I have developed a
+          passion for software engineering and I am eager to pursue a career in this field.
+          Although I do not have a formal education in Computer Science, I have gained
+          knowledge in programming languages such as Python and C++ during my studies.
+          Furthermore, I have developed a deep understanding of the Java programming
+          language and proficiency in HTML5 through online tutorials and self guided practices
+          upon graduation. On top of my technical skills, I am a quick learner and a team player.I thrive in
+          fast-paced environments and am always eager to take on new challenges.</p>
+      </div>
+    </div>
   </section>
   <section id="skills">
     <h1>Skills</h1>
@@ -163,25 +186,37 @@
     </div>
   </section>
   <section id="projects">
-    <div class="project1">
-      <p>this should be the fyp project</p>
+    <h1>Projects</h1>
+    <div class="project">
+      <h2>FYP Project</h2>
+      <p>This is the description for the FYP project.</p>
+      <a
+        href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-28/issue-04/046009/Android-mobile-platform-based-image-reconstruction-for-photoacoustic-tomography/10.1117/1.JBO.28.4.046009.full">fyp
+        published paper</a>
+      <a
+        href="https://github.com/DeeplearningBILAB/Android-mobile-platform-based-image-reconstruction-for-photoacoustic-tomography">fyp
+        github</a>
+
     </div>
-    <div class="project2">
-      <p>this should be the new project</p>
+    <div class="project">
+      <h2>Breathalyzer</h2>
+      <p>This is the description for the new project.</p>
     </div>
-    <div class="project3">
-      <p>this should be the breathalyzer project</p>
+    <div class="project">
+      <h2>Messaging Application</h2>
+      <p>This is the description for the breathalyzer project.</p>
     </div>
   </section>
   <section id="contact">
     <h1>Contact me</h1>
-    <form class="contact-me-form" action="https://formsubmit.co/ab6593eedc94b27425cabf2e06c02b37" method="POST">
+    <form class="contact-me-form" action="https://formsubmit.co/ab6593eedc94b27425cabf2e06c02b37" method="POST"
+      onsubmit="handleFormSubmit()">
       <input type="text" name="name" placeholder="Please enter your name" required>
       <input type="email" name="email" placeholder="Please enter your email address" required>
       <input type="text" name="subject" placeholder="Please enter the subject (optional)">
       <textarea class="message-input" name="message" placeholder="Please enter your message (optional)"></textarea>
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500/website.html">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/website.html#contact">
       <button type="submit">Send</button>
     </form>
   </section>
