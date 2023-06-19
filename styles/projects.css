@@ -6,6 +6,85 @@
 }
 
 .project {
-	padding: 20px;
-	border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-icon-container {
+	display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: flex-end;
+}
+
+.project-icon {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  position: relative;
+}
+
+.project-icon svg {
+	width: 30px;
+  fill: rgb(18, 30, 39);
+}
+
+.project-icon .tooltip {
+	position: absolute;
+  color: rgb(18, 30, 39);
+  border-radius: 2px;
+  font-size: 15px;
+  bottom: -20px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.project-icon:hover .tooltip {
+	opacity: 1;
+}
+
+.view-project {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(18, 30, 39);
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color:white;
+  transform-origin: left top;
+  transition: transform 0.5s, color 0.5s;
+  border-radius: 20px;
+}
+
+.view-project:hover {
+  transform: scale(1.10);
+  color: rgb(168, 208, 206);
+}
+
+.view-project::after {
+  content: '\f08e';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left: 5px;
+  display: none;
+}
+
+.view-project:hover::after {
+  display: inline-block;
+}
+
+.screenshot {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }

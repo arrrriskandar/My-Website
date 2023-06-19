@@ -1,39 +1,42 @@
 #home {
   height: 100vh;
   background-color: rgb(18, 30, 39);
-  color: rgb (255, 255, 255);
+  padding-top: 0;
 }
 
-.contents {
+.home-contents {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.text-and-links {
   align-items: center;
-  justify-content: center;
-}
-
-.image {
-  margin-right: 20px;
-  background-color: transparent;
-}
-
-.text {
-  align-items: left;
 }
 
 .links svg {
   width: 50px;
-  margin-right: 50px;
   fill: white;
   cursor: pointer;
-  transition: fill 0.15s;
+  transition: fill 0.15s, transform 0.15s;
+}
+
+.emoji-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links svg:hover {
 	fill: rgb(168, 208, 206);
+  transform: scale(1.2);
 }
 
 .links {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .links a {
@@ -60,5 +63,16 @@
 
 .links a:hover .tooltip {
   opacity: 1;
+}
+
+#home h2 {
+  line-height: 45px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+strong {
+  color: rgb(168, 208, 206);
+  font: 30px;
 }
 

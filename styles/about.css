@@ -1,3 +1,14 @@
 #about {
 	color: rgb(18, 30, 39);
 }
+
+.about-contents {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#about p {
+	line-height: 40px;
+	font-size: 20px;
+}

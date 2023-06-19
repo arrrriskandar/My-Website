@@ -21,6 +21,7 @@
 .skill svg {
   margin-bottom: 0.5rem;
   width: 100px;
+  fill: rgb(18, 30, 39);
 }
 
 .skill span {

@@ -8,12 +8,12 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
-  	background-color: rgb(18, 30, 39, 0.9);
-  	height: 20px;
+  background-color: rgb(18, 30, 39, 0.9);
+  height: 20px;
 }
 
 header a {
-  	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 	font-size: 18px;
 	margin: 0 20px;
 	transition: color 0.15s;
