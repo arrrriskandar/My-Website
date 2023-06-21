@@ -23,3 +23,7 @@ header a {
 header a:hover {
 	color: rgb(168, 208, 206);
 }
+
+h2.summary strong {
+  font-size: 1.2em;
+}

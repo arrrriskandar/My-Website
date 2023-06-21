@@ -7,13 +7,18 @@
 
 .project {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: top;
+  margin-bottom: 100px;
   justify-content: space-between;
 }
 
 .project-info {
   flex: 1;
+}
+
+.project-info h2 {
+  font-size: 2.5em;
+  margin-top: 0;
 }
 
 .project-icon-container {
@@ -52,16 +57,24 @@
 	opacity: 1;
 }
 
-.view-project {
+.view-project-container {
   display: inline-block;
+  width: 190px;
+  height: 4px;
+}
+
+.view-project {
+  display: block;
   padding: 10px 20px;
   background-color: rgb(18, 30, 39);
   border: 1px solid #ccc;
   text-decoration: none;
-  color:white;
+  color: white;
   transform-origin: left top;
   transition: transform 0.5s, color 0.5s;
   border-radius: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .view-project:hover {
@@ -86,5 +99,16 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.screenshot img {
+  margin-left: 20px;
+  width: 40%;
+  border: 2px solid rgb(18, 30, 39);
+  transition: transform 0.3s;
+}
+
+.screenshot img:hover {
+  transform: scale(1.05);
 }
