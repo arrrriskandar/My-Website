@@ -113,4 +113,7 @@
   .screenshot {
     padding-top: 30px;
   }
+  .project-icon-container {
+    padding-right: 80px;
+  }
 }
