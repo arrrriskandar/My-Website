@@ -17,6 +17,28 @@
   <script src="https://kit.fontawesome.com/7f70c90e4b.js" crossorigin="anonymous"></script>
 
   <script>
+    var phrases = ["Football ", "Traveler ", "Adventurer ", "Cyrophile " , "Foodie "];
+    var prePhrases = ["a ", "an avid ", "an ", "a ", "a "];
+    var postPhrases = [" fan ", " ", " ", " ", " "];
+    var emojis = ["&#x26BD;", "&#x2708;", "&#x1F3D4;","&#x2744;", "&#x1F374;"];
+    var currentIndex = 0;
+
+    function changePhrase() {
+      var outputElement = document.getElementById("outputSentence");
+      var phrase = phrases[currentIndex];
+      var prePhrase = prePhrases[currentIndex];
+      var postPhrase = postPhrases[currentIndex];
+      var emoji = emojis[currentIndex];
+      var sentence = "I'm an aspiring " + "<strong>Software Engineer </strong>" + "and " + prePhrase + " <strong>" + phrase + "</strong>" + '<span class="emoji">' + emoji + '</span>' + postPhrase;
+
+      outputElement.innerHTML = sentence;
+      currentIndex = (currentIndex + 1) % phrases.length;
+  }
+
+  setInterval(changePhrase, 3000);
+  </script>
+
+  <script>
     function handleFormSubmit() {
       alert("Form submitted successfully!");
     }
@@ -82,8 +104,7 @@
         <img src="pictures/Memoji-home.png" alt="Profile Picture">
       </div>
     </div>
-    <h2 class="summary"><strong>Motivated</strong> and <strong>organized</strong> bioengineering graduate with experience in <strong>mobile development</strong>. An <strong>independent, quick learner</strong> who excels in team collaboration.</h2>
-    </h2>
+    <h2 id="outputSentence">I'm an aspiring <strong>Software Engineer</strong> and a <strong>Foodie</strong><span class="emoji">&#x1F374;</span></h2>
   </section>
   <section id="about">
     <h1>About Me</h1>
@@ -92,27 +113,23 @@
         <img src="pictures/Memoji-about.png" alt="Profile Picture">
       </div>
       <div class="text">
+        <h3>Highly motivated and organized Bioengineering graduate with experience in mobile development</h3>
         <p>
-          I have developed a strong passion for software engineering and I am dedicated to pursuing a career in this field. 
-          Upon graduation, I took the initiative to utilise the abundance of resources on the internet by learning new skills to expand my skillset.
-          I developed Chatter which is a Messaging Application using React Native with Firebase.
-          This experience.....
+          I've developed a strong passion for Software Engineering and I'm dedicated to pursuing a career in this field. 
+          As a lifelong learner, I took the initiative to utilise the abundance of resources on the internet by learning new skills to expand my skillset upon graduation.
+          I'm actively practicing my coding skills on <a href="https://leetcode.com/Ar_Iskandar/" target="_blank">Leetcode</a>.
         </p>
         <p>
-          I have a Bachelor of Engineering in Bioengineering from Nanyang Technological University. 
-          During my academic journey, I completed a Final Year Project where I was tasked to developed an Android mobile-platform-based image reconstruction for photoacoustic tomography.
-          For my contribution, i was made the co-author for the project which was published by .... and presented at the "Photons Plus Ultrasounf: Imaging and Sensing 2023" conference.
-          The project was chosen to be presented at ... and a paper was published...
-          This experience enhanced my problem-solving abilities and reinforced my commitment to delivering high-quality software solutions.
-          In my second last semester in NTU, my group members and i developed a breathalyser.............
+          I've a Bachelor of Engineering in Bioengineering from <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a>.
+          During my academic journey, I completed a Final Year Project where I was tasked to developed an <a href="#projects">Android mobile-platform-based image reconstruction for photoacoustic tomography</a>.
+          For my contribution, i was made the co-author for the project which was <a href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-28/issue-4/046009/Android-mobile-platform-based-image-reconstruction-for-photoacoustic-tomography/10.1117/1.JBO.28.4.046009.full?tab=ArticleLink&SSO=1" target="_blank">published by SPIE</a>
+          and <a href="https://spie.org/news/android-based-application-for-photoacoustic-tomography-image-reconstruction?SSO=1" target="_blank">featured on SPIE news</a>.
         </p>
         <p>
-          In addition to technical skills, I possess excellent communication and teamwork skills, which I honed through group projects and extracurricular activities. 
-          I am a quick learner, thrive in fast-paced environments, and am always eager to take on new challenges.
-        </p>
-        <p>
-          To further advance my knowledge, I am currently pursuing online courses in software development and staying updated with industry trends. 
-          I am excited about the opportunity to contribute my technical skills and passion for software engineering to a dynamic team.(NOTE: TRY TO ADD WHAT I GAIN OR LEARN FROM EACH PROJECT)
+          I'm an independent and quick learner who excels in team collaboration. 
+          I thrive in fast-paced environments and eagerly embrace new challenges. 
+          Additionally, I possess strong problem-solving skills and have a keen eye for detail. 
+          I am adept at adapting to changing circumstances and am always seeking opportunities to expand my skill set.
         </p>
       </div>
     </div>
@@ -248,7 +265,7 @@
     <h1>Projects</h1>
     <div class="project">
       <div class="project-info">
-        <h2>Android mobile-platform-based image reconstruction for photoacoustic tomography</h2>
+        <h2 id="FYP">Android mobile-platform-based image reconstruction for photoacoustic tomography(PAT)</h2>
         <div class="project-icon-container">
           <div class="project-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -294,7 +311,7 @@
             <div class="tooltip">Matplotlib</div>
           </div>
         </div>
-        <p>This application enables image reconstruction on affordable, compact, and widely accessible mobile phones, eliminating the need for bulky and expensive desktop computers, laptops, or workstations. This project was published by SPIE and presented at the conference titled "Photons Plus Ultrasound: Imaging and Sensing 2023".</p>
+        <p>This <strong>first-of-its-kind</strong> and <strong>groundbreaking</strong> application enables image reconstruction on affordable, compact, and widely accessible mobile phones, eliminating the need for bulky and expensive desktop computers, laptops, or workstations. It bolsters the versatility of point-of-care applications by enhancing the adaptability of PAT systems.</p>
         <div class="view-project-container">
           <a class="view-project" href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-28/issue-4/046009/Android-mobile-platform-based-image-reconstruction-for-photoacoustic-tomography/10.1117/1.JBO.28.4.046009.full?tab=ArticleLink" target="_b">View Publication</a>
           <a class="view-project" href="https://github.com/DeeplearningBILAB/Android-mobile-platform-based-image-reconstruction-for-photoacoustic-tomography" target="_b">View Project</a>

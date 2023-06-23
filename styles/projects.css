@@ -16,11 +16,6 @@
   flex: 1;
 }
 
-.project-info h2 {
-  font-size: 2.5em;
-  margin-top: 0;
-}
-
 .project-icon-container {
 	display: flex;
   justify-content: space-between;
@@ -79,7 +74,7 @@
 
 .view-project:hover {
   transform: scale(1.10);
-  color: rgb(168, 208, 206);
+  color: rgb(0, 116, 217);
 }
 
 .view-project::after {
@@ -97,18 +92,25 @@
 .screenshot {
   display: flex;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
+  justify-content: space-evenly;
 }
 
 .screenshot img {
-  margin-left: 20px;
   width: 40%;
   border: 2px solid rgb(18, 30, 39);
   transition: transform 0.3s;
+  border-radius: 10px;
 }
 
 .screenshot img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 1310px){
+  .project{
+    flex-direction: column;
+  }
+  .screenshot {
+    padding-top: 30px;
+  }
 }
