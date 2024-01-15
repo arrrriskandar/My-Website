@@ -10,7 +10,7 @@ function changePhrase() {
   var prePhrase = prePhrases[currentIndex];
   var postPhrase = postPhrases[currentIndex];
   var emoji = emojis[currentIndex];
-  var sentence = "I'm an aspiring " + "<strong>Software Engineer </strong>" + "and " + prePhrase + " <strong>" + phrase + "</strong>" + '<span class="emoji">' + emoji + '</span>' + postPhrase;
+  var sentence = "I'm a passionate " + "<strong>Software Engineer </strong>" + "and " + prePhrase + " <strong>" + phrase + "</strong>" + '<span class="emoji">' + emoji + '</span>' + postPhrase;
 
   outputElement.innerHTML = sentence;
   currentIndex = (currentIndex + 1) % phrases.length;
